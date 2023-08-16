@@ -1,4 +1,10 @@
 <template>
+    <Head>
+        <Title>
+            Custom | {{product.title}}
+        </Title>
+        <Meta name="custom" :content="product.description"></Meta>
+    </Head>
     <div>
         <div v-if="!pending">
             <product-details :product="product" />
