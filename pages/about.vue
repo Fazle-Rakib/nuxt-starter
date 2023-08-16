@@ -11,13 +11,13 @@
 
 <script setup>
     const {data} = await useFetch('/api/dummy', {
-        params: {
-            name: '1xyz3'
-        },
-        method: 'post',
-        body: {
-            age: 23
-        }
+        // params: {
+        //     name: '1xyz3'
+        // },
+        // method: 'post',
+        // body: {
+        //     age: 23
+        // }
     });
 </script>
 
