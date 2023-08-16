@@ -10,7 +10,15 @@
 </template>
 
 <script setup>
-    const {data} = useFetch('/api/dummy');
+    const {data} = await useFetch('/api/dummy', {
+        params: {
+            name: '1xyz3'
+        },
+        method: 'post',
+        body: {
+            age: 23
+        }
+    });
 </script>
 
 <style scoped>
