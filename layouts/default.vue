@@ -6,6 +6,8 @@
                     <li> <NuxtLink to="/"> Home</NuxtLink> </li>
                     <li> <NuxtLink to="/about"> About</NuxtLink> </li>
                     <li> <NuxtLink to="/products" class="btn"> Products</NuxtLink> </li>
+                    <!-- Link that doesn't exist will throw error on client-side-->
+                    <li> <NuxtLink to="/products/abc" > Products abc</NuxtLink> </li>
                 </ul>
             </nav>
         </header> 
