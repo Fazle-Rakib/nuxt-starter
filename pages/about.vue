@@ -6,6 +6,9 @@
         <div>
             {{data}}
         </div>
+        <div>
+            {{dynamicData}}
+        </div>
     </div>
 </template>
 
@@ -19,6 +22,9 @@
         //     age: 23
         // }
     });
+
+    const {data: dynamicData} = await useFetch('/api/currency/11007');
+    
 </script>
 
 <style scoped>
