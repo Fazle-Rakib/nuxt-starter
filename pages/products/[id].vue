@@ -1,12 +1,8 @@
 <template>
     <div>
-        <h1>Products <span class="font-bold italic">{{id}}</span></h1>
-        <p v-if="!pending" class="bg-blue-400 text-gray-100 p-4 shadow-sm flex flex-col rounded">
-            <span>{{ product.title}}</span>
-            <span>{{ product.price}}</span>
-            <span>{{ product.category}}</span> 
-            <img :src="product.image" alt="" class="rounded max-w-sm"> 
-        </p>
+        <div v-if="!pending">
+            <product-details :product="product" />
+        </div>
         <p v-else>
             Loading!!!!!!!!
         </p>

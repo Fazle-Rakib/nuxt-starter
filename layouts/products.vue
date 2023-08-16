@@ -1,7 +1,7 @@
 <template>
     <div>
         <header class="p-4">
-            <NuxtLink to="/">Back to Home</NuxtLink> 
+            <NuxtLink to="/" class="btn ml-4 mt-4">Back to Home</NuxtLink> 
         </header> 
         <div class="container mx-auto p-4">
             <slot />
